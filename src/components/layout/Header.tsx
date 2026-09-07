@@ -35,15 +35,22 @@ export const Header: React.FC = () => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open
+  // Lock body scroll when mobile menu is open & listen for Escape key
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
       document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, [mobileMenuOpen]);
 
@@ -102,7 +109,9 @@ export const Header: React.FC = () => {
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden w-11 h-11 flex items-center justify-center text-ivory hover:text-champagne focus:outline-none transition-colors rounded-sm border border-champagne/20 bg-charcoal/60 backdrop-blur-md"
-            aria-label="Toggle Navigation Menu"
+            aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation-drawer"
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -111,6 +120,10 @@ export const Header: React.FC = () => {
 
       {/* Mobile Drawer Menu */}
       <div
+        id="mobile-navigation-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile Navigation"
         className={`fixed inset-0 z-40 bg-charcoal/98 backdrop-blur-2xl transition-all duration-400 flex flex-col justify-between p-6 sm:p-8 pt-24 sm:pt-28 lg:hidden overflow-y-auto ${
           mobileMenuOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-4'
         }`}
@@ -170,7 +183,7 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="flex items-center justify-between text-xs text-stone-warm pt-1 font-sans">
-            <span>NIVA CASTLE</span>
+            <span>NIVA DOMS</span>
             <span>ELEVATED LIVING</span>
           </div>
         </div>

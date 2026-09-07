@@ -1,6 +1,6 @@
 export const BRAND = {
   name: "NIVA",
-  fullName: "NIVA CASTLE",
+  fullName: "NIVA DOMS",
   tagline: "ELEVATED LIVING",
   shortTagline: "Elevated Living",
   foundedYear: 2026,

@@ -313,7 +313,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 border-t border-champagne/20">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 text-xs text-stone-warm/80 font-sans">
             <div className="text-center lg:text-left text-xs font-light">
-              <p>© {BRAND.foundedYear} NIVA. All Rights Reserved. NIVA CASTLE.</p>
+              <p>© {BRAND.foundedYear} NIVA. All Rights Reserved. NIVA DOMS.</p>
             </div>
             <div className="flex items-center gap-6 sm:gap-10">
               <div className="flex items-center gap-2 text-stone-warm">

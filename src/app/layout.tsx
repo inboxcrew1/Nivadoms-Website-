@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   description: SITE_CONFIG.description,
   keywords: SITE_CONFIG.keywords,
-  authors: [{ name: 'NIVA Castle Elevated Living', url: SITE_CONFIG.url }],
+  authors: [{ name: 'NIVA DOMS Elevated Living', url: SITE_CONFIG.url }],
   creator: 'NIVA Elevated Living',
   publisher: 'NIVA Elevated Living',
   formatDetection: {

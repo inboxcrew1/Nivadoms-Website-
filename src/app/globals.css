@@ -60,8 +60,20 @@
     background: #222228;
     border-radius: 3px;
   }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #C9A46A;
+  /* Focus visible outline for WCAG accessibility */
+  :focus-visible {
+    outline: 2px solid #C9A46A;
+    outline-offset: 2px;
+  }
+
+  /* Support prefers-reduced-motion for motion sensitivity */
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
