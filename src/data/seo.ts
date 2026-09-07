@@ -56,13 +56,13 @@ export const PAGE_METADATA: Record<string, { title: string; description: string;
     canonical: "https://nivadoms.com/d1",
   },
   d2: {
-    title: "NIVA D2 — Grounded Luxury Dome Cabin & Resort Pod (14 Ft Nominal Class) | ₹6,00,000",
-    description: "Explore NIVA D2: 14 ft nominal grounded luxury dome cabin engineered for seamless garden, tea estate, and plinth integration with panoramic star-gazing glass skylight, ensuite bathroom, and Bakelite architectural cladding at ₹6,00,000.",
+    title: "NIVA D2 — Grounded Luxury Dome Cabin & Resort Pod (14 Ft Nominal Class) | ₹5,20,000",
+    description: "Explore NIVA D2: 14 ft nominal grounded luxury dome cabin engineered for seamless garden, tea estate, and plinth integration with panoramic star-gazing glass skylight, ensuite bathroom, and Bakelite architectural cladding at ₹5,20,000.",
     canonical: "https://nivadoms.com/d2",
   },
   whyNiva: {
     title: "Why NIVA — Commercial ROI & Rapid Modular Resort Deployment India",
-    description: "Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site prefabrication, and fixed ₹6,00,000 base pricing for Indian resorts and farm stays.",
+    description: "Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site prefabrication, and fixed pricing from ₹5,20,000 to ₹6,00,000 for Indian resorts and farm stays.",
     canonical: "https://nivadoms.com/why-niva",
   },
   applications: {
@@ -87,12 +87,12 @@ export const PAGE_METADATA: Record<string, { title: string; description: string;
   },
   faq: {
     title: "Frequently Asked Questions — Pricing, Specifications & Logistics",
-    description: "Get answers to questions about NIVA luxury dome cabins: ₹6,00,000 base pricing, off-site delivery across India, 14 ft nominal dimensions, ensuite bathroom, and site requirements.",
+    description: "Get answers to questions about NIVA luxury dome cabins: transparent pricing from ₹5,20,000 (D2) to ₹6,00,000 (D1), off-site delivery across India, 14 ft nominal dimensions, ensuite bathroom, and site requirements.",
     canonical: "https://nivadoms.com/faq",
   },
   contact: {
     title: "Request a Quote & Project Consultation",
-    description: "Contact NIVA to request a commercial quote for luxury dome cabins (D1 & D2) at ₹6,00,000. Discuss resort feasibility, delivery timelines, and volume rollouts across India.",
+    description: "Contact NIVA to request a commercial quote for luxury dome cabins (NIVA D1 at ₹6,00,000 & NIVA D2 at ₹5,20,000). Discuss resort feasibility, delivery timelines, and volume rollouts across India.",
     canonical: "https://nivadoms.com/contact",
   },
 };
@@ -102,7 +102,7 @@ export function getOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "NIVA Elevated Living",
-    "legalName": "NIVA Castle Elevated Living",
+    "legalName": "NIVA DOMS",
     "url": "https://nivadoms.com",
     "logo": "https://nivadoms.com/brand/niva-logo-main.png",
     "description": "Manufacturer and supplier of luxury dome cabins, geodesic glamping pods, and prefabricated resort accommodation in India.",
@@ -110,7 +110,25 @@ export function getOrganizationSchema() {
     "telephone": "+91 95361 71380",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "0 Khuria Road, Azad Public School Ke Pas, Durga Enclave",
+      "addressLocality": "Bulandshahar",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "203001",
       "addressCountry": "IN"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "MAA BRIJESHWARI ENGINEERING",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "0 Khuria Road, Azad Public School Ke Pas, Durga Enclave",
+        "addressLocality": "Bulandshahar",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "203001",
+        "addressCountry": "IN"
+      },
+      "identifier": "09FOVPP5846F1ZT",
+      "taxID": "09FOVPP5846F1ZT"
     },
     "sameAs": [
       "https://instagram.com",
@@ -188,7 +206,7 @@ export function getProductSchema(productId: 'd1' | 'd2') {
       "@type": "Offer",
       "url": "https://nivadoms.com/d2",
       "priceCurrency": "INR",
-      "price": "600000",
+      "price": "520000",
       "priceValidUntil": "2027-12-31",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock",

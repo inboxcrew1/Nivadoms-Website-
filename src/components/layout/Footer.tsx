@@ -233,14 +233,15 @@ export const Footer: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Location row */}
+                {/* Manufacturing & Location row */}
                 <div className="flex items-start gap-3">
                   <div className="w-7 h-7 rounded-full border border-champagne/30 bg-champagne/5 flex items-center justify-center text-champagne flex-shrink-0 mt-0.5">
                     <MapPin size={13} />
                   </div>
                   <div>
-                    <span className="text-[10px] uppercase tracking-wider text-stone-warm/70 block">Location</span>
-                    <span className="text-stone-warm font-light">India • Fabricated in India</span>
+                    <span className="text-[10px] uppercase tracking-wider text-stone-warm/70 block">Manufacturing Entity</span>
+                    <span className="text-stone-warm font-light text-xs block">MAA BRIJESHWARI ENGINEERING</span>
+                    <span className="text-stone-warm/70 font-light text-[11px]">Bulandshahar, UP • ISO 9001:2015</span>
                   </div>
                 </div>
               </div>

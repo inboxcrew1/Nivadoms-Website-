@@ -93,6 +93,59 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Manufacturing & Engineering Pedigree */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 md:px-10 bg-charcoal border-t border-champagne/15">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-8 sm:mb-10">
+            <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.3em] text-champagne block mb-2 font-medium">
+              MANUFACTURING & ENGINEERING CREDENTIALS
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl text-ivory font-normal">
+              ENGINEERED IN INDIA TO RIGOROUS STANDARDS
+            </h3>
+          </div>
+
+          <div className="border border-champagne/20 bg-charcoal-400/40 p-6 sm:p-8 md:p-10 rounded-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+              <div>
+                <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-champagne block mb-1">
+                  REGISTERED MANUFACTURING ENTITY
+                </span>
+                <h4 className="font-serif text-lg sm:text-xl text-ivory font-normal mb-3">
+                  MAA BRIJESHWARI ENGINEERING
+                </h4>
+                <p className="text-stone-warm text-xs sm:text-sm font-light font-sans leading-relaxed mb-4">
+                  0 Khuria Road, Azad Public School Ke Pas, Durga Enclave,<br />
+                  Bulandshahar, Uttar Pradesh 203001, India
+                </p>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-champagne/10 border border-champagne/30 text-[11px] text-champagne font-sans font-light">
+                  <span>Quality Management: ISO 9001:2015</span>
+                </div>
+              </div>
+
+              <div className="space-y-3 pt-4 md:pt-0 border-t md:border-t-0 md:border-l border-champagne/15 md:pl-8">
+                <div className="flex justify-between items-center text-xs font-sans pb-2 border-b border-white/5">
+                  <span className="text-stone-warm font-light">Brand Entity</span>
+                  <span className="text-ivory font-medium">NIVA DOMS</span>
+                </div>
+                <div className="flex justify-between items-center text-xs font-sans pb-2 border-b border-white/5">
+                  <span className="text-stone-warm font-light">GSTIN</span>
+                  <span className="text-ivory font-mono text-[11px]">09FOVPP5846F1ZT</span>
+                </div>
+                <div className="flex justify-between items-center text-xs font-sans pb-2 border-b border-white/5">
+                  <span className="text-stone-warm font-light">UDYAM Registration</span>
+                  <span className="text-ivory font-mono text-[11px]">UDYAM-UP-18-0013586</span>
+                </div>
+                <div className="flex justify-between items-center text-xs font-sans">
+                  <span className="text-stone-warm font-light">Enterprise Category</span>
+                  <span className="text-ivory">MICRO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <CTASection
         title="COLLABORATE WITH NIVA."

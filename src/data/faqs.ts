@@ -22,7 +22,7 @@ export const FAQS: FAQItem[] = [
     id: 'public-pricing',
     category: 'Pricing & Commercials',
     question: 'What is the base price of NIVA D1 and NIVA D2?',
-    answer: 'Both NIVA D1 and NIVA D2 have an official public base selling price of ₹6,00,000 per unit. Applicable taxes, site-specific civil foundation works, transportation, and special custom finishes are quoted based on destination logistics across India.',
+    answer: 'NIVA D1 (Elevated Luxury Cabin) has an official public base selling price of ₹6,00,000 per unit, and NIVA D2 (Grounded Luxury Cabin) has an official public base selling price of ₹5,20,000 per unit. Applicable taxes, site-specific civil foundation works, transportation, and special custom finishes are quoted based on destination logistics across India.',
   },
   {
     id: 'site-preparation',
@@ -46,7 +46,7 @@ export const FAQS: FAQItem[] = [
     id: 'hospitality-roi',
     category: 'Pricing & Commercials',
     question: 'What is the commercial ROI potential for resort operators?',
-    answer: 'With luxury glamping and dome cabin ADRs in India ranging from ₹6,000 to ₹14,000+ per night at 60-70% seasonal occupancy, each ₹6,00,000 NIVA unit typically achieves complete capital payback within 12 to 18 operational months.',
+    answer: 'With luxury glamping and dome cabin ADRs in India ranging from ₹6,000 to ₹14,000+ per night at 60-70% seasonal occupancy, each NIVA unit (₹5,20,000 to ₹6,00,000 base investment) typically achieves complete capital payback within 12 to 18 operational months.',
   },
   {
     id: 'brand-overview',

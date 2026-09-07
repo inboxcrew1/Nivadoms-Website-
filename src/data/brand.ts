@@ -21,6 +21,14 @@ export const BRAND = {
     hours: "Monday – Saturday: 9:30 AM – 6:30 PM IST",
     country: "India",
   },
+  manufacturer: {
+    legalName: "MAA BRIJESHWARI ENGINEERING",
+    address: "0 Khuria Road, Azad Public School Ke Pas, Durga Enclave, Bulandshahar, Uttar Pradesh 203001, India",
+    gstin: "09FOVPP5846F1ZT",
+    udyam: "UDYAM-UP-18-0013586",
+    enterpriseType: "MICRO",
+    qualityReference: "ISO 9001:2015",
+  },
   social: {
     instagram: "https://instagram.com",
     linkedin: "https://linkedin.com",

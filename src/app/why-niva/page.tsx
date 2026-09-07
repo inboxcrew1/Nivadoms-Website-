@@ -36,7 +36,7 @@ export default function WhyNivaPage() {
     {
       icon: TrendingUp,
       title: "Compelling ROI & Commercial Viability",
-      desc: "Fixed public pricing of ₹6,00,000 per unit allows hospitality developers across India to achieve capital payback within 12-18 months based on premium ADR projections.",
+      desc: "Fixed public pricing from ₹5,20,000 (D2) to ₹6,00,000 (D1) per unit allows hospitality developers across India to achieve capital payback within 12-18 months based on premium ADR projections.",
     },
     {
       icon: Clock,
@@ -61,7 +61,7 @@ export default function WhyNivaPage() {
     {
       icon: CheckCircle2,
       title: "Standardized Public Price Transparency",
-      desc: "Clear public selling price of ₹6,00,000 with zero hidden manufacturing markups.",
+      desc: "Clear public selling prices (NIVA D1: ₹6,00,000 | NIVA D2: ₹5,20,000) with zero hidden markups.",
     },
   ];
 

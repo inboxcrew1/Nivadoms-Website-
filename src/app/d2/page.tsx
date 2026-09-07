@@ -4,8 +4,8 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getProductSchema, getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
-  title: 'NIVA D2 — Grounded Luxury Dome Cabin & Resort Pod (14 Ft Nominal Class) | ₹6,00,000',
-  description: 'Explore NIVA D2: 14 ft nominal grounded luxury dome cabin engineered for seamless garden, tea estate, and plinth integration with panoramic star-gazing glass skylight, ensuite bathroom, and Bakelite architectural cladding at ₹6,00,000.',
+  title: 'NIVA D2 — Grounded Luxury Dome Cabin & Resort Pod (14 Ft Nominal Class) | ₹5,20,000',
+  description: 'Explore NIVA D2: 14 ft nominal grounded luxury dome cabin engineered for seamless garden, tea estate, and plinth integration with panoramic star-gazing glass skylight, ensuite bathroom, and Bakelite architectural cladding at ₹5,20,000.',
   alternates: {
     canonical: '/d2',
   },
