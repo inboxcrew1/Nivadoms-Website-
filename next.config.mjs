@@ -25,24 +25,12 @@ const nextConfig = {
             value: 'nosniff',
           },
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
-          },
-          {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
           },
           {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin',
-          },
-          {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=(), payment=()',
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload',
           },
         ],
       },
@@ -81,21 +69,6 @@ const nextConfig = {
             value: 'public, max-age=31536000, immutable',
           },
         ],
-      },
-    ];
-  },
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.nivadoms.com' }],
-        destination: 'https://nivadoms.com/:path*',
-        permanent: true,
-      },
-      {
-        source: '/(package\\.json|tsconfig\\.json|next\\.config\\.mjs|\\.env.*|data/.*)',
-        destination: '/',
-        permanent: false,
       },
     ];
   },
