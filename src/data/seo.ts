@@ -116,7 +116,7 @@ export function getOrganizationSchema() {
       "postalCode": "203001",
       "addressCountry": "IN"
     },
-    "manufacturer": {
+    "parentOrganization": {
       "@type": "Organization",
       "name": "MAA BRIJESHWARI ENGINEERING",
       "address": {
@@ -129,6 +129,12 @@ export function getOrganizationSchema() {
       },
       "identifier": "09FOVPP5846F1ZT",
       "taxID": "09FOVPP5846F1ZT"
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "IN",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+      "merchantReturnLink": "https://nivadoms.com/terms"
     },
     "sameAs": [
       "https://instagram.com",
@@ -166,21 +172,63 @@ export function getProductSchema(productId: 'd1' | 'd2') {
       "description": "14 ft nominal elevated luxury dome cabin perched on 3 primary elevated supports (UHM pipe concept) approx. 7.5 ft above finished ground level with folding staircase, attached ensuite bathroom, iron/steel framework, and Bakelite cladding.",
       "sku": "NIVA-D1-14FT",
       "mpn": "NIVA-D1",
+      "category": "Prefabricated & Modular Buildings",
       "brand": {
         "@type": "Brand",
         "name": "NIVA"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "MAA BRIJESHWARI ENGINEERING",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "0 Khuria Road, Azad Public School Ke Pas, Durga Enclave",
+          "addressLocality": "Bulandshahar",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "203001",
+          "addressCountry": "IN"
+        }
       },
       "offers": {
         "@type": "Offer",
         "url": "https://nivadoms.com/d1",
         "priceCurrency": "INR",
         "price": "600000",
+        "validFrom": "2026-01-01",
         "priceValidUntil": "2027-12-31",
         "itemCondition": "https://schema.org/NewCondition",
         "availability": "https://schema.org/InStock",
         "seller": {
           "@type": "Organization",
           "name": "NIVA Elevated Living"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+          "merchantReturnLink": "https://nivadoms.com/terms"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 21,
+              "maxValue": 35,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 10,
+              "unitCode": "DAY"
+            }
+          }
         }
       }
     };
@@ -198,21 +246,63 @@ export function getProductSchema(productId: 'd1' | 'd2') {
     "description": "14 ft nominal grounded luxury dome cabin engineered for seamless garden, resort plinth, and landscape integration with panoramic star-gazing glass skylight, attached ensuite bathroom, and Bakelite architectural cladding.",
     "sku": "NIVA-D2-14FT",
     "mpn": "NIVA-D2",
+    "category": "Prefabricated & Modular Buildings",
     "brand": {
       "@type": "Brand",
       "name": "NIVA"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "MAA BRIJESHWARI ENGINEERING",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "0 Khuria Road, Azad Public School Ke Pas, Durga Enclave",
+        "addressLocality": "Bulandshahar",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "203001",
+        "addressCountry": "IN"
+      }
     },
     "offers": {
       "@type": "Offer",
       "url": "https://nivadoms.com/d2",
       "priceCurrency": "INR",
       "price": "520000",
+      "validFrom": "2026-01-01",
       "priceValidUntil": "2027-12-31",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
         "name": "NIVA Elevated Living"
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "IN",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+        "merchantReturnLink": "https://nivadoms.com/terms"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "IN"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 21,
+            "maxValue": 35,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 3,
+            "maxValue": 10,
+            "unitCode": "DAY"
+          }
+        }
       }
     }
   };

@@ -35,6 +35,10 @@ export default function TermsConditionsPage() {
         <p>All technical specifications and installation guidelines are subject to approved project designs and site-specific geotechnical conditions.</p>
         <h2 className="font-serif text-xl text-ivory pt-4">3. Intellectual Property</h2>
         <p>The NIVA brand, emblem, wordmark, tagline &quot;ELEVATED LIVING&quot;, and architectural cabin designs are proprietary intellectual properties of NIVA.</p>
+        <h2 className="font-serif text-xl text-ivory pt-4">4. Custom Fabrication & Non-Returnable Policy</h2>
+        <p>Because NIVA luxury dome cabins (NIVA D1 and NIVA D2) are modular architectural structures custom fabricated to client project specifications and engineering approvals, all units are made-to-order. Returns, cancellations, or refunds are not permitted once manufacturing and procurement commence at the manufacturing facility.</p>
+        <h2 className="font-serif text-xl text-ivory pt-4">5. Delivery, Handling & Freight Logistics</h2>
+        <p>Off-site fabrication typically requires 3 to 5 weeks (21 to 35 days) depending on order volume. Following manufacturing completion, units are dispatched via specialized freight carrier from Bulandshahar, Uttar Pradesh, with transit times typically ranging between 3 to 10 days across India. Freight transportation charges vary based on distance, terrain contours, access road viability, and crane placement requirements, and are billed on a per-project quotation basis.</p>
       </div>
     </div>
   );
