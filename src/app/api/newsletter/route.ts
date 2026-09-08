@@ -1,4 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
+
+interface StoredSubscriber {
+  email: string;
+  timestamp: string;
+  dateIndia: string;
+}
+
+const DESTINATION_EMAIL = 'nivadoms@gmail.com';
+
+function saveSubscriber(email: string) {
+  try {
+    const filePath = path.join(process.cwd(), 'data', 'subscribers.json');
+    const dir = path.dirname(filePath);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    let existing: StoredSubscriber[] = [];
+    if (fs.existsSync(filePath)) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        if (Array.isArray(parsed)) existing = parsed;
+      } catch {
+        existing = [];
+      }
+    }
+    const record: StoredSubscriber = {
+      email,
+      timestamp: new Date().toISOString(),
+      dateIndia: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+    };
+    existing.unshift(record);
+    if (existing.length > 500) existing = existing.slice(0, 500);
+    fs.writeFileSync(filePath, JSON.stringify(existing, null, 2), 'utf8');
+  } catch (err) {
+    process.stdout.write('[NEWSLETTER STORAGE WARNING]: ' + String(err) + '\n');
+  }
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -20,7 +57,36 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    console.log('[NIVA NEWSLETTER SUBSCRIPTION]:', email, 'at', new Date().toISOString());
+    // Save to disk
+    saveSubscriber(email);
+
+    // Log to stdout for Hostinger runtime logs
+    const logLine = `[NIVA NEWSLETTER SUBSCRIPTION]: ${email} at ${new Date().toISOString()}\n`;
+    process.stdout.write(logLine);
+    console.info('[NIVA SUBSCRIBER]:', email);
+
+    // Forward notification to private inbox (nivadoms@gmail.com)
+    try {
+      await fetch(`https://formsubmit.co/ajax/${DESTINATION_EMAIL}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Referer': 'https://nivadoms.com',
+          'Origin': 'https://nivadoms.com',
+        },
+        body: JSON.stringify({
+          _subject: `[NIVA DOMS] New Newsletter Subscriber: ${email}`,
+          _template: 'table',
+          _captcha: 'false',
+          'Date & Time (IST)': new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+          'Subscriber Email': email,
+          'Source': 'Footer Newsletter Subscription',
+        }),
+      });
+    } catch (emailErr) {
+      process.stdout.write('[EMAIL NEWSLETTER DISPATCH WARNING]: ' + String(emailErr) + '\n');
+    }
 
     return NextResponse.json(
       { success: true, message: 'Thank you for subscribing to the NIVA journal.' },
