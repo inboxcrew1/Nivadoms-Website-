@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface PriceBlockProps {
   productName: string;
@@ -10,9 +11,9 @@ interface PriceBlockProps {
 
 export const PriceBlock: React.FC<PriceBlockProps> = ({
   productName,
-  subtitle = 'STARTING / SELLING PRICE',
-  price = '₹6,00,000',
-  disclaimer = 'Applicable taxes, site-specific civil works, transportation and other exclusions may apply as specified in the quotation.',
+  subtitle = 'COMMERCIAL SPECIFICATIONS & PRICING',
+  price = 'Price Upon Request',
+  disclaimer = 'Custom commercial quotations provided based on project volume, site topography, civil foundation requirements, and destination logistics.',
   className = '',
 }) => {
   return (
@@ -24,15 +25,21 @@ export const PriceBlock: React.FC<PriceBlockProps> = ({
             {productName} • {subtitle}
           </span>
           <div className="flex items-baseline gap-2">
-            <span className="font-serif text-3xl sm:text-4xl lg:text-5xl text-ivory tracking-tight">
+            <span className="font-serif text-2xl sm:text-3xl lg:text-4xl text-ivory tracking-tight">
               {price}
             </span>
           </div>
         </div>
-        <div className="max-w-md">
-          <p className="text-xs text-stone-warm/80 font-sans font-light leading-relaxed">
+        <div className="max-w-md flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <p className="text-xs text-stone-warm/80 font-sans font-light leading-relaxed flex-grow">
             {disclaimer}
           </p>
+          <Link
+            href="/contact"
+            className="flex-shrink-0 inline-flex items-center justify-center px-4 py-2.5 bg-champagne text-charcoal font-sans text-[11px] font-medium tracking-wider uppercase hover:bg-ivory transition-colors duration-200"
+          >
+            Request Quote
+          </Link>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { TrendingUp, ShieldCheck, Zap, Sparkles, Clock, CheckCircle2 } from 'luc
 
 export const metadata: Metadata = {
   title: 'Why NIVA — Commercial ROI & Rapid Modular Resort Deployment India',
-  description: 'Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site turnkey manufacturing, and standardized transparent pricing of ₹6,00,000.',
+  description: 'Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site turnkey manufacturing, and competitive modular commercial deployment.',
   alternates: {
     canonical: '/why-niva',
   },
@@ -36,7 +36,7 @@ export default function WhyNivaPage() {
     {
       icon: TrendingUp,
       title: "Compelling ROI & Commercial Viability",
-      desc: "Fixed public pricing from ₹5,20,000 (D2) to ₹6,00,000 (D1) per unit allows hospitality developers across India to achieve capital payback within 12-18 months based on premium ADR projections.",
+      desc: "Competitive commercial ROI allows hospitality developers across India to achieve capital payback within 12-18 months based on premium ADR projections.",
     },
     {
       icon: Clock,
@@ -60,8 +60,8 @@ export default function WhyNivaPage() {
     },
     {
       icon: CheckCircle2,
-      title: "Standardized Public Price Transparency",
-      desc: "Clear public selling prices (NIVA D1: ₹6,00,000 | NIVA D2: ₹5,20,000) with zero hidden markups.",
+      title: "Direct Manufacturer Transparency",
+      desc: "Direct manufacturer pricing with tailored commercial project proposals and zero intermediary markups.",
     },
   ];
 

@@ -4,8 +4,8 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getProductSchema, getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
-  title: 'NIVA D1 — Elevated Luxury Dome Cabin (14 Ft Nominal Class) | ₹6,00,000',
-  description: 'Explore NIVA D1: 14 ft nominal elevated luxury dome cabin perched on 3 primary elevated supports (UHM pipe concept) approx. 7.5 ft high with folding staircase, attached ensuite bathroom, and Bakelite architectural cladding at ₹6,00,000.',
+  title: 'NIVA D1 — Elevated Luxury Dome Cabin (14 Ft Nominal Class)',
+  description: 'Explore NIVA D1: 14 ft nominal elevated luxury dome cabin perched on 3 primary elevated supports (UHM pipe concept) approx. 7.5 ft high with folding staircase, attached ensuite bathroom, and Bakelite architectural cladding.',
   alternates: {
     canonical: '/d1',
   },

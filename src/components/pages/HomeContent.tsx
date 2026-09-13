@@ -96,8 +96,8 @@ export const HomeContent: React.FC = () => {
               <span className="text-[8px] sm:text-[10px] md:text-[11px] tracking-[0.2em] sm:tracking-[0.25em] text-stone-warm uppercase font-sans mt-0.5 sm:mt-1 block">ATTACHED ENSUITE BATH</span>
             </div>
             <div className="p-2 pt-3 sm:pt-2">
-              <span className="font-serif text-lg sm:text-2xl md:text-3xl text-gold-warm block font-normal">FROM ₹5,20,000</span>
-              <span className="text-[8px] sm:text-[10px] md:text-[11px] tracking-[0.2em] sm:tracking-[0.25em] text-stone-warm uppercase font-sans mt-0.5 sm:mt-1 block">PUBLIC BASE PRICING</span>
+              <span className="font-serif text-lg sm:text-2xl md:text-3xl text-gold-warm block font-normal">BESPOKE PRICING</span>
+              <span className="text-[8px] sm:text-[10px] md:text-[11px] tracking-[0.2em] sm:tracking-[0.25em] text-stone-warm uppercase font-sans mt-0.5 sm:mt-1 block">QUOTATION UPON REQUEST</span>
             </div>
             <div className="p-2 pt-3 sm:pt-2">
               <span className="font-serif text-lg sm:text-2xl md:text-3xl text-ivory block font-normal">BAKELITE FINISH</span>
@@ -130,7 +130,7 @@ export const HomeContent: React.FC = () => {
             <div className="glass-card p-5 sm:p-6 border-champagne/20">
               <div className="text-champagne font-serif text-2xl mb-2 sm:mb-3">03</div>
               <h3 className="font-serif text-lg text-ivory mb-2">Scalable Capital</h3>
-              <p className="text-stone-warm text-xs font-light leading-relaxed font-sans">Transparent base pricing from ₹5,20,000 to ₹6,00,000 per unit allows rapid resort expansion without heavy, prolonged civil construction.</p>
+              <p className="text-stone-warm text-xs font-light leading-relaxed font-sans">Bespoke modular prefabrication and rapid off-site deployment allow seamless resort expansion without heavy, prolonged civil construction.</p>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ export const HomeContent: React.FC = () => {
                 </div>
                 <div className="flex items-baseline justify-between mb-3 sm:mb-4">
                   <h3 className="font-serif text-2xl sm:text-3xl text-ivory">{d1.name}</h3>
-                  <span className="font-serif text-lg sm:text-xl text-champagne">{d1.price}</span>
+                  <span className="font-sans text-[11px] uppercase tracking-wider text-champagne font-medium border border-champagne/30 px-2.5 py-1">UPON REQUEST</span>
                 </div>
                 <p className="text-stone-warm text-xs sm:text-sm font-light mb-6 leading-relaxed font-sans">
                   A premium elevated dome cabin designed for distinctive hospitality environments, retreats, resorts and glamping destinations.
@@ -207,7 +207,7 @@ export const HomeContent: React.FC = () => {
                 </div>
                 <div className="flex items-baseline justify-between mb-3 sm:mb-4">
                   <h3 className="font-serif text-2xl sm:text-3xl text-ivory">{d2.name}</h3>
-                  <span className="font-serif text-lg sm:text-xl text-champagne">{d2.price}</span>
+                  <span className="font-sans text-[11px] uppercase tracking-wider text-champagne font-medium border border-champagne/30 px-2.5 py-1">UPON REQUEST</span>
                 </div>
                 <p className="text-stone-warm text-xs sm:text-sm font-light mb-6 leading-relaxed font-sans">
                   A premium NIVA dome cabin configuration designed for hospitality, resort and destination-stay applications.

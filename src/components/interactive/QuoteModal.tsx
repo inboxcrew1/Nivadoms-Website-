@@ -157,7 +157,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               <div className="bg-charcoal-500/90 border border-champagne/25 p-3.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-stone-warm">
                 <div className="flex items-center gap-2">
                   <Sparkles size={16} className="text-champagne flex-shrink-0" />
-                  <span>Public Base Selling Price: <strong className="text-ivory font-serif text-sm ml-1">From ₹5,20,000 / Unit</strong></span>
+                  <span>Commercial Consultation: <strong className="text-ivory font-serif text-sm ml-1">Tailored Project Estimates</strong></span>
                 </div>
                 <span className="text-[10px] text-champagne tracking-widest uppercase">Verified Standard</span>
               </div>
@@ -172,8 +172,8 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     onChange={(e) => setFormData({ ...formData, model: e.target.value as 'NIVA D1' | 'NIVA D2' | 'Both' })}
                     className="w-full bg-charcoal-500 border border-white/15 text-ivory text-xs px-3.5 py-3 focus:border-champagne focus:outline-none"
                   >
-                    <option value="NIVA D1">NIVA D1 (Elevated Luxury Cabin - ₹6,00,000)</option>
-                    <option value="NIVA D2">NIVA D2 (Grounded Luxury Cabin - ₹5,20,000)</option>
+                    <option value="NIVA D1">NIVA D1 (Elevated Luxury Cabin)</option>
+                    <option value="NIVA D2">NIVA D2 (Grounded Luxury Cabin)</option>
                     <option value="Both">Combination of D1 & D2</option>
                   </select>
                 </div>

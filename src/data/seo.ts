@@ -51,18 +51,18 @@ export const PAGE_METADATA: Record<string, { title: string; description: string;
     canonical: "https://nivadoms.com",
   },
   d1: {
-    title: "NIVA D1 — Elevated Luxury Dome Cabin (14 Ft Nominal Class) | ₹6,00,000",
-    description: "Explore NIVA D1: 14 ft nominal elevated luxury dome cabin perched on 3 primary elevated supports (UHM pipe concept) approx. 7.5 ft high with folding staircase, attached ensuite bathroom, and Bakelite architectural cladding at ₹6,00,000.",
+    title: "NIVA D1 — Elevated Luxury Dome Cabin (14 Ft Nominal Class)",
+    description: "Explore NIVA D1: 14 ft nominal elevated luxury dome cabin perched on 3 primary elevated supports (UHM pipe concept) approx. 7.5 ft high with folding staircase, attached ensuite bathroom, and Bakelite architectural cladding.",
     canonical: "https://nivadoms.com/d1",
   },
   d2: {
-    title: "NIVA D2 — Grounded Luxury Dome Cabin & Resort Pod (14 Ft Nominal Class) | ₹5,20,000",
-    description: "Explore NIVA D2: 14 ft nominal grounded luxury dome cabin engineered for seamless garden, tea estate, and plinth integration with panoramic star-gazing glass skylight, ensuite bathroom, and Bakelite architectural cladding at ₹5,20,000.",
+    title: "NIVA D2 — Grounded Luxury Dome Cabin & Resort Pod (14 Ft Nominal Class)",
+    description: "Explore NIVA D2: 14 ft nominal grounded luxury dome cabin engineered for seamless garden, tea estate, and plinth integration with panoramic star-gazing glass skylight, ensuite bathroom, and Bakelite architectural cladding.",
     canonical: "https://nivadoms.com/d2",
   },
   whyNiva: {
     title: "Why NIVA — Commercial ROI & Rapid Modular Resort Deployment India",
-    description: "Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site prefabrication, and fixed pricing from ₹5,20,000 to ₹6,00,000 for Indian resorts and farm stays.",
+    description: "Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site prefabrication, and bespoke turnkey deployment for Indian resorts and farm stays.",
     canonical: "https://nivadoms.com/why-niva",
   },
   applications: {
@@ -87,12 +87,12 @@ export const PAGE_METADATA: Record<string, { title: string; description: string;
   },
   faq: {
     title: "Frequently Asked Questions — Pricing, Specifications & Logistics",
-    description: "Get answers to questions about NIVA luxury dome cabins: transparent pricing from ₹5,20,000 (D2) to ₹6,00,000 (D1), off-site delivery across India, 14 ft nominal dimensions, ensuite bathroom, and site requirements.",
+    description: "Get answers to questions about NIVA luxury dome cabins: bespoke pricing upon request, off-site delivery across India, 14 ft nominal dimensions, ensuite bathroom, and site requirements.",
     canonical: "https://nivadoms.com/faq",
   },
   contact: {
     title: "Request a Quote & Project Consultation",
-    description: "Contact NIVA to request a commercial quote for luxury dome cabins (NIVA D1 at ₹6,00,000 & NIVA D2 at ₹5,20,000). Discuss resort feasibility, delivery timelines, and volume rollouts across India.",
+    description: "Contact NIVA to request a commercial quote for luxury dome cabins (NIVA D1 & NIVA D2). Discuss resort feasibility, delivery timelines, and volume rollouts across India.",
     canonical: "https://nivadoms.com/contact",
   },
 };
@@ -192,10 +192,6 @@ export function getProductSchema(productId: 'd1' | 'd2') {
       "offers": {
         "@type": "Offer",
         "url": "https://nivadoms.com/d1",
-        "priceCurrency": "INR",
-        "price": "600000",
-        "validFrom": "2026-01-01",
-        "priceValidUntil": "2027-12-31",
         "itemCondition": "https://schema.org/NewCondition",
         "availability": "https://schema.org/InStock",
         "seller": {
@@ -266,10 +262,6 @@ export function getProductSchema(productId: 'd1' | 'd2') {
     "offers": {
       "@type": "Offer",
       "url": "https://nivadoms.com/d2",
-      "priceCurrency": "INR",
-      "price": "520000",
-      "validFrom": "2026-01-01",
-      "priceValidUntil": "2027-12-31",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock",
       "seller": {

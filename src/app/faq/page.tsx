@@ -6,7 +6,7 @@ import { getFaqSchema, getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions — Pricing, Specifications & Logistics',
-  description: 'Get answers to questions about NIVA luxury dome cabins: ₹6,00,000 base pricing, off-site delivery across India, foundation requirements, plumbing, electrical, and AC provisions.',
+  description: 'Get answers to questions about NIVA luxury dome cabins: bespoke project pricing, off-site delivery across India, foundation requirements, plumbing, electrical, and AC provisions.',
   alternates: {
     canonical: '/faq',
   },

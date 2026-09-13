@@ -5,7 +5,7 @@ import { getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
   title: 'Request a Quote & Project Consultation',
-  description: 'Contact NIVA to request a commercial quote for luxury dome cabins (D1 & D2) at ₹6,00,000. Discuss resort feasibility, delivery timelines, and volume rollouts across India.',
+  description: 'Contact NIVA to request a commercial quote for luxury dome cabins (NIVA D1 & NIVA D2). Discuss resort feasibility, delivery timelines, and volume rollouts across India.',
   alternates: {
     canonical: '/contact',
   },
