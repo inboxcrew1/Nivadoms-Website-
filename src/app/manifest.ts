@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'NIVA Elevated Living — Luxury Dome Cabins India',
+    name: 'NIVA Elevated Living - Luxury Dome Cabins India',
     short_name: 'NIVA',
     description: 'Manufacturer of luxury dome cabins, glamping pods, and modular resort accommodation in India.',
     start_url: '/',

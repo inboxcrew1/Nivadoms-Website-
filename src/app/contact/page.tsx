@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: '/contact',
   },
   openGraph: {
-    title: 'Request a Quote — NIVA Luxury Dome Cabins India',
+    title: 'Request a Quote - NIVA Luxury Dome Cabins India',
     description: 'Request a project quote and discuss resort feasibility with NIVA architectural advisors.',
     url: 'https://nivadoms.com/contact',
     images: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://nivadoms.com/images/products/d2-hero-twilight.jpg',
         width: 1200,
         height: 630,
-        alt: 'NIVA Luxury Dome Cabins — Elevated Living India',
+        alt: 'NIVA Luxury Dome Cabins - Elevated Living India',
         type: 'image/jpeg',
       },
     ],

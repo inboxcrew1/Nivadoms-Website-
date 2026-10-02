@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://nivadoms.com/images/products/d2-hero-twilight.jpg',
         width: 1200,
         height: 630,
-        alt: 'NIVA Luxury Dome Cabins — Elevated Living India',
+        alt: 'NIVA Luxury Dome Cabins - Elevated Living India',
         type: 'image/jpeg',
       },
     ],

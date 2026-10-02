@@ -6,13 +6,13 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
-  title: 'About NIVA — Elevated Living | Luxury Hospitality Architecture India',
+  title: 'About NIVA - Elevated Living | Luxury Hospitality Architecture India',
   description: 'Learn about NIVA: Pioneering modular luxury dome cabins and low-impact hospitality architecture for resorts, eco retreats, and nature destinations across India.',
   alternates: {
     canonical: '/about',
   },
   openGraph: {
-    title: 'About NIVA — Luxury Hospitality Architecture India',
+    title: 'About NIVA - Luxury Hospitality Architecture India',
     description: 'Pioneering modular luxury dome cabins and low-impact hospitality architecture across India.',
     url: 'https://nivadoms.com/about',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: 'https://nivadoms.com/images/products/d2-hero-twilight.jpg',
         width: 1200,
         height: 630,
-        alt: 'NIVA Luxury Dome Cabins — Elevated Living India',
+        alt: 'NIVA Luxury Dome Cabins - Elevated Living India',
         type: 'image/jpeg',
       },
     ],

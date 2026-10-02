@@ -3,12 +3,12 @@ import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'Terms & Conditions for NIVA Elevated Living — commercial estimates, engineering approvals, and intellectual property.',
+  description: 'Terms & Conditions for NIVA Elevated Living - commercial estimates, engineering approvals, and intellectual property.',
   alternates: {
     canonical: '/terms',
   },
   openGraph: {
-    title: 'Terms & Conditions — NIVA Elevated Living',
+    title: 'Terms & Conditions - NIVA Elevated Living',
     description: 'Terms and commercial policies for NIVA Elevated Living.',
     url: 'https://nivadoms.com/terms',
     images: [

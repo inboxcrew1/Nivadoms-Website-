@@ -3,12 +3,12 @@ import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for NIVA Elevated Living — commercial inquiries, hospitality project feasibility data, and confidential communications.',
+  description: 'Privacy Policy for NIVA Elevated Living - commercial inquiries, hospitality project feasibility data, and confidential communications.',
   alternates: {
     canonical: '/privacy',
   },
   openGraph: {
-    title: 'Privacy Policy — NIVA Elevated Living',
+    title: 'Privacy Policy - NIVA Elevated Living',
     description: 'Privacy Policy and client confidentiality standards for NIVA Elevated Living.',
     url: 'https://nivadoms.com/privacy',
     images: [

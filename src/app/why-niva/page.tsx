@@ -5,13 +5,13 @@ import { getBreadcrumbSchema } from '@/data/seo';
 import { TrendingUp, ShieldCheck, Zap, Sparkles, Clock, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Why NIVA — Commercial ROI & Rapid Modular Resort Deployment India',
+  title: 'Why NIVA - Commercial ROI & Rapid Modular Resort Deployment India',
   description: 'Discover the strategic advantages of NIVA: 12-18 month ROI, zero heavy civil foundations, off-site turnkey manufacturing, and competitive modular commercial deployment.',
   alternates: {
     canonical: '/why-niva',
   },
   openGraph: {
-    title: 'Why NIVA — Commercial ROI & Modular Resort Deployment',
+    title: 'Why NIVA - Commercial ROI & Modular Resort Deployment',
     description: '12-18 month ROI, turnkey off-site fabrication, and luxury hospitality standards for Indian resort operators.',
     url: 'https://nivadoms.com/why-niva',
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://nivadoms.com/images/products/d2-hero-twilight.jpg',
         width: 1200,
         height: 630,
-        alt: 'NIVA Luxury Dome Cabins — Elevated Living India',
+        alt: 'NIVA Luxury Dome Cabins - Elevated Living India',
         type: 'image/jpeg',
       },
     ],

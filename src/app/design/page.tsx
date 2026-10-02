@@ -5,13 +5,13 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
-  title: 'Architecture & Craft — Geodesic Engineering & Faceted Dome Design',
+  title: 'Architecture & Craft - Geodesic Engineering & Faceted Dome Design',
   description: 'Explore NIVA’s architectural engineering: geodesic triangulated shells, structural tripod pillars, thermal barrier envelopes, and concealed hospitality MEP utilities.',
   alternates: {
     canonical: '/design',
   },
   openGraph: {
-    title: 'Architecture & Craft — NIVA Geodesic Engineering',
+    title: 'Architecture & Craft - NIVA Geodesic Engineering',
     description: 'Geodesic triangulated shells, structural tripod pillars, and turnkey hospitality interiors in India.',
     url: 'https://nivadoms.com/design',
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://nivadoms.com/images/products/d2-hero-twilight.jpg',
         width: 1200,
         height: 630,
-        alt: 'NIVA Luxury Dome Cabins — Elevated Living India',
+        alt: 'NIVA Luxury Dome Cabins - Elevated Living India',
         type: 'image/jpeg',
       },
     ],

@@ -1,4 +1,4 @@
-# NIVA — Elevated Living
+# NIVA - Elevated Living
 
 > Premium Indian manufacturer and supplier of luxury modular dome cabins, geodesic glamping pods, and turnkey hospitality accommodation units.
 

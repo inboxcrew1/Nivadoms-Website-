@@ -18,7 +18,7 @@ export const BRAND = {
     phoneRaw: "9536171380",
     whatsapp: "+91 95361 71380",
     whatsappUrl: "https://wa.me/919536171380?text=Hello%2C%20I%20am%20interested%20in%20NIVA%20luxury%20dome%20cabins.",
-    hours: "Monday – Saturday: 9:30 AM – 6:30 PM IST",
+    hours: "Monday - Saturday: 9:30 AM - 6:30 PM IST",
     country: "India",
   },
   manufacturer: {

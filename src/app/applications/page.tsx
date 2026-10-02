@@ -6,13 +6,13 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { getBreadcrumbSchema } from '@/data/seo';
 
 export const metadata: Metadata = {
-  title: 'Resort & Hospitality Applications — Dome Cabins for India’s Terrains',
+  title: 'Resort & Hospitality Applications - Dome Cabins for India’s Terrains',
   description: 'Modular dome cabins and glamping pods engineered for luxury resorts, agro-tourism farm stays, eco sanctuaries, and private retreats across Uttarakhand, Himachal Pradesh, Rajasthan, and nationwide.',
   alternates: {
     canonical: '/applications',
   },
   openGraph: {
-    title: 'Hospitality Applications — Luxury Dome Cabins India',
+    title: 'Hospitality Applications - Luxury Dome Cabins India',
     description: 'Turnkey accommodation units for resorts, farm stays, glamping sites, and mountain retreats.',
     url: 'https://nivadoms.com/applications',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: 'https://nivadoms.com/images/products/d2-hero-twilight.jpg',
         width: 1200,
         height: 630,
-        alt: 'NIVA Luxury Dome Cabins — Elevated Living India',
+        alt: 'NIVA Luxury Dome Cabins - Elevated Living India',
         type: 'image/jpeg',
       },
     ],
