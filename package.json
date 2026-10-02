@@ -27,6 +27,7 @@
   },
   "overrides": {
     "glob": "^10.5.0",
-    "postcss": "^8.5.28"
+    "postcss": "^8.5.28",
+    "brace-expansion": "^1.1.21"
   }
 }
