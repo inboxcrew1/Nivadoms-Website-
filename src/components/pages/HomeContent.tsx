@@ -55,7 +55,7 @@ export const HomeContent: React.FC = () => {
             quality={75}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/65 to-charcoal/40" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,10,6,0.75)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(38,24,15,0.75)_100%)]" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center mt-12 sm:mt-20 md:mt-24 my-auto">
