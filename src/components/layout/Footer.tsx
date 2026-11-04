@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative w-full text-ivory overflow-hidden bg-[#0D0D0F] pt-20 sm:pt-28 lg:pt-32 pb-10 sm:pb-14 min-h-[820px] flex flex-col justify-between">
+    <footer className="relative w-full text-ivory overflow-hidden bg-[#0F0A06] pt-20 sm:pt-28 lg:pt-32 pb-10 sm:pb-14 min-h-[820px] flex flex-col justify-between">
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           PANORAMIC ARCHITECTURAL BACKGROUND (HIGH QUALITY - UNCROPPED)
           HTML5 Picture element with native media queries:
@@ -98,16 +98,16 @@ export const Footer: React.FC = () => {
           3. Bottom grounding: gentle anchor for copyright & legal links.
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       {/* 1. Top smooth blend from charcoal background */}
-      <div className="absolute inset-x-0 top-0 h-40 z-[1] bg-gradient-to-b from-[#0D0D0F] via-[#0D0D0F]/90 to-transparent pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-x-0 top-0 h-40 z-[1] bg-gradient-to-b from-[#0F0A06] via-[#0F0A06]/90 to-transparent pointer-events-none" aria-hidden="true" />
 
       {/* 2. Full-height calibrated contrast scrim: 
              Darker at top (80%) for crisp typography,
              luminous in middle (45%) so glowing domes & mountains shine through vividly,
              balanced at bottom (75%) for clean trust bar readability */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#0D0D0F]/80 via-[#0D0D0F]/45 to-[#0D0D0F]/75 pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#0F0A06]/80 via-[#1C120A]/45 to-[#0F0A06]/75 pointer-events-none" aria-hidden="true" />
 
       {/* 3. Bottom anchor gradient */}
-      <div className="absolute inset-x-0 bottom-0 h-28 z-[1] bg-gradient-to-t from-[#0D0D0F]/90 via-[#0D0D0F]/40 to-transparent pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-x-0 bottom-0 h-28 z-[1] bg-gradient-to-t from-[#0F0A06]/90 via-[#0F0A06]/40 to-transparent pointer-events-none" aria-hidden="true" />
 
       {/* Main Content Container */}
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 w-full flex-grow flex flex-col justify-between">
@@ -117,7 +117,7 @@ export const Footer: React.FC = () => {
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col items-start pr-0 lg:pr-8">
             <Link href="/" className="inline-flex items-center gap-3.5 group transition-opacity duration-300 hover:opacity-90" aria-label="NIVA Home">
               <div className="relative w-12 h-8 sm:w-14 sm:h-9 flex-shrink-0">
-                <Image src="/brand/niva-emblem.png" alt="NIVA Emblem" fill sizes="60px" className="object-contain filter drop-shadow-[0_2px_12px_rgba(201,164,106,0.45)]" />
+                <Image src="/brand/niva-emblem.png" alt="NIVA Emblem" fill sizes="60px" className="object-contain filter drop-shadow-[0_2px_12px_rgba(217,160,91,0.5)]" />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-2xl sm:text-3xl font-normal tracking-[0.28em] text-ivory leading-none drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">NIVA</span>
@@ -201,7 +201,7 @@ export const Footer: React.FC = () => {
               <h4 className="text-[11px] font-sans uppercase tracking-[0.25em] text-champagne-light mb-5 font-semibold drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">GET IN TOUCH</h4>
               <div className="flex flex-col gap-3 font-sans text-xs">
                 {/* Email row */}
-                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#0D0D0F]/70 backdrop-blur-sm border border-champagne/15 hover:border-champagne/40 transition-colors">
+                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#1A1008]/80 backdrop-blur-sm border border-champagne/20 hover:border-champagne/45 transition-colors">
                   <div className="w-7 h-7 rounded-full border border-champagne/30 bg-champagne/10 flex items-center justify-center text-champagne flex-shrink-0 mt-0.5">
                     <Mail size={13} />
                   </div>
@@ -214,7 +214,7 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* Phone row */}
-                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#0D0D0F]/70 backdrop-blur-sm border border-champagne/15 hover:border-champagne/40 transition-colors">
+                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#1A1008]/80 backdrop-blur-sm border border-champagne/20 hover:border-champagne/45 transition-colors">
                   <div className="w-7 h-7 rounded-full border border-champagne/30 bg-champagne/10 flex items-center justify-center text-champagne flex-shrink-0 mt-0.5">
                     <Phone size={13} />
                   </div>
@@ -227,7 +227,7 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* WhatsApp row */}
-                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#0D0D0F]/70 backdrop-blur-sm border border-champagne/15 hover:border-champagne/40 transition-colors">
+                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#1A1008]/80 backdrop-blur-sm border border-champagne/20 hover:border-champagne/45 transition-colors">
                   <div className="w-7 h-7 rounded-full border border-champagne/30 bg-champagne/10 flex items-center justify-center text-champagne flex-shrink-0 mt-0.5">
                     <MessageCircle size={13} />
                   </div>
@@ -240,7 +240,7 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* Manufacturing & Location row */}
-                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#0D0D0F]/70 backdrop-blur-sm border border-champagne/15">
+                <div className="flex items-start gap-3 p-2.5 rounded-sm bg-[#1A1008]/80 backdrop-blur-sm border border-champagne/20">
                   <div className="w-7 h-7 rounded-full border border-champagne/30 bg-champagne/10 flex items-center justify-center text-champagne flex-shrink-0 mt-0.5">
                     <MapPin size={13} />
                   </div>
@@ -256,13 +256,13 @@ export const Footer: React.FC = () => {
             {/* Social Icons */}
             <div className="pt-5">
               <div className="flex items-center gap-2.5">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="NIVA on Instagram" className="w-9 h-9 rounded-full border border-champagne/30 bg-[#0D0D0F]/70 backdrop-blur-sm flex items-center justify-center text-stone-light hover:bg-champagne hover:text-charcoal hover:border-champagne transition-all duration-300 hover:scale-105 shadow-md">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="NIVA on Instagram" className="w-9 h-9 rounded-full border border-champagne/30 bg-[#1A1008]/80 backdrop-blur-sm flex items-center justify-center text-stone-light hover:bg-champagne hover:text-charcoal hover:border-champagne transition-all duration-300 hover:scale-105 shadow-md">
                   <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="NIVA on LinkedIn" className="w-9 h-9 rounded-full border border-champagne/30 bg-[#0D0D0F]/70 backdrop-blur-sm flex items-center justify-center text-stone-light hover:bg-champagne hover:text-charcoal hover:border-champagne transition-all duration-300 hover:scale-105 shadow-md">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="NIVA on LinkedIn" className="w-9 h-9 rounded-full border border-champagne/30 bg-[#1A1008]/80 backdrop-blur-sm flex items-center justify-center text-stone-light hover:bg-champagne hover:text-charcoal hover:border-champagne transition-all duration-300 hover:scale-105 shadow-md">
                   <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="NIVA on YouTube" className="w-9 h-9 rounded-full border border-champagne/30 bg-[#0D0D0F]/70 backdrop-blur-sm flex items-center justify-center text-stone-light hover:bg-champagne hover:text-charcoal hover:border-champagne transition-all duration-300 hover:scale-105 shadow-md">
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="NIVA on YouTube" className="w-9 h-9 rounded-full border border-champagne/30 bg-[#1A1008]/80 backdrop-blur-sm flex items-center justify-center text-stone-light hover:bg-champagne hover:text-charcoal hover:border-champagne transition-all duration-300 hover:scale-105 shadow-md">
                   <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
                 </a>
               </div>
@@ -271,7 +271,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Stay Connected Section - Luxury Frosted Showcase Card */}
-        <div className="my-8 sm:my-10 p-6 sm:p-8 rounded-sm bg-[#0D0D0F]/75 backdrop-blur-md border border-champagne/25 shadow-xl">
+        <div className="my-8 sm:my-10 p-6 sm:p-8 rounded-sm bg-[#1A1008]/85 backdrop-blur-md border border-champagne/30 shadow-xl">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8">
             <div className="max-w-md">
               <span className="text-[11px] font-sans uppercase tracking-[0.25em] text-champagne-light block mb-1.5 font-semibold drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]">STAY CONNECTED</span>
@@ -295,7 +295,7 @@ export const Footer: React.FC = () => {
                       placeholder="Enter your email address"
                       required
                       autoComplete="email"
-                      className="flex-grow bg-[#0D0D0F]/90 backdrop-blur-sm border border-champagne/30 focus:border-champagne text-ivory text-xs px-4 py-3 placeholder:text-stone-light/50 focus:outline-none transition-colors rounded-sm"
+                      className="flex-grow bg-[#0F0A06]/90 backdrop-blur-sm border border-champagne/30 focus:border-champagne text-ivory text-xs px-4 py-3 placeholder:text-stone-light/50 focus:outline-none transition-colors rounded-sm"
                     />
                     <button
                       type="submit"
@@ -322,21 +322,21 @@ export const Footer: React.FC = () => {
               <p className="drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]">© {BRAND.foundedYear} NIVA. All Rights Reserved. NIVA DOMS.</p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
-              <div className="flex items-center gap-2 p-1.5 px-3 rounded-sm bg-[#0D0D0F]/60 backdrop-blur-sm border border-champagne/15 text-stone-light shadow-sm">
+              <div className="flex items-center gap-2 p-1.5 px-3 rounded-sm bg-[#1A1008]/70 backdrop-blur-sm border border-champagne/20 text-stone-light shadow-sm">
                 <Leaf size={15} className="text-champagne-light flex-shrink-0 stroke-[1.5]" />
                 <div className="text-[10px] uppercase tracking-wider font-normal leading-tight text-left">
                   <span className="block text-ivory font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">SUSTAINABLE</span>
                   <span className="block text-champagne-light font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">BY DESIGN</span>
                 </div>
               </div>
-              <div className="flex items-center gap-2 p-1.5 px-3 rounded-sm bg-[#0D0D0F]/60 backdrop-blur-sm border border-champagne/15 text-stone-light shadow-sm">
+              <div className="flex items-center gap-2 p-1.5 px-3 rounded-sm bg-[#1A1008]/70 backdrop-blur-sm border border-champagne/20 text-stone-light shadow-sm">
                 <Mountain size={15} className="text-champagne-light flex-shrink-0 stroke-[1.5]" />
                 <div className="text-[10px] uppercase tracking-wider font-normal leading-tight text-left">
                   <span className="block text-ivory font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">MADE</span>
                   <span className="block text-champagne-light font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">IN INDIA</span>
                 </div>
               </div>
-              <div className="flex items-center gap-2 p-1.5 px-3 rounded-sm bg-[#0D0D0F]/60 backdrop-blur-sm border border-champagne/15 text-stone-light shadow-sm">
+              <div className="flex items-center gap-2 p-1.5 px-3 rounded-sm bg-[#1A1008]/70 backdrop-blur-sm border border-champagne/20 text-stone-light shadow-sm">
                 <Trees size={15} className="text-champagne-light flex-shrink-0 stroke-[1.5]" />
                 <div className="text-[10px] uppercase tracking-wider font-normal leading-tight text-left">
                   <span className="block text-ivory font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">INSPIRED</span>

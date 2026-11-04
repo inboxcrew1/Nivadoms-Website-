@@ -23,7 +23,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           alt="NIVA Emblem"
           fill
           sizes="50px"
-          className="object-contain filter drop-shadow-[0_2px_8px_rgba(201,164,106,0.3)] transition-transform duration-500 group-hover:scale-105"
+          className="object-contain filter drop-shadow-[0_2px_8px_rgba(217,160,91,0.35)] transition-transform duration-500 group-hover:scale-105"
         />
       </div>
 

@@ -239,8 +239,8 @@ export async function GET(req: NextRequest) {
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #0D0D0F;
-      color: #F2EFE6;
+      background-color: #0F0A06;
+      color: #F7F3EB;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       padding: 24px 16px;
       line-height: 1.5;
@@ -252,7 +252,7 @@ export async function GET(req: NextRequest) {
       justify-content: space-between;
       align-items: center;
       padding-bottom: 24px;
-      border-bottom: 1px solid rgba(201,164,106,0.25);
+      border-bottom: 1px solid rgba(217,160,91,0.25);
       margin-bottom: 28px;
       gap: 16px;
     }
@@ -260,12 +260,12 @@ export async function GET(req: NextRequest) {
       font-size: 24px;
       font-weight: 500;
       letter-spacing: 0.15em;
-      color: #F2EFE6;
+      color: #F7F3EB;
     }
     .brand span {
       font-size: 11px;
       letter-spacing: 0.25em;
-      color: #C9A46A;
+      color: #D9A05B;
       text-transform: uppercase;
     }
     .actions { display: flex; gap: 12px; }
@@ -274,8 +274,8 @@ export async function GET(req: NextRequest) {
       align-items: center;
       gap: 6px;
       padding: 10px 18px;
-      background: #C9A46A;
-      color: #0D0D0F;
+      background: #D9A05B;
+      color: #0F0A06;
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
@@ -285,7 +285,7 @@ export async function GET(req: NextRequest) {
       cursor: pointer;
       transition: background 0.2s;
     }
-    .btn:hover { background: #E1B977; }
+    .btn:hover { background: #EBBF7E; }
     .stats {
       display: flex;
       gap: 16px;
@@ -293,56 +293,56 @@ export async function GET(req: NextRequest) {
       flex-wrap: wrap;
     }
     .stat-card {
-      background: #141418;
-      border: 1px solid rgba(201,164,106,0.2);
+      background: #1C120A;
+      border: 1px solid rgba(217,160,91,0.25);
       border-radius: 6px;
       padding: 16px 24px;
       min-width: 180px;
     }
-    .stat-num { font-size: 28px; font-weight: 600; color: #C9A46A; }
-    .stat-label { font-size: 11px; color: #B7B0A1; text-transform: uppercase; letter-spacing: 0.1em; }
+    .stat-num { font-size: 28px; font-weight: 600; color: #D9A05B; }
+    .stat-label { font-size: 11px; color: #D6C9BA; text-transform: uppercase; letter-spacing: 0.1em; }
     .table-wrap {
-      background: #141418;
-      border: 1px solid rgba(201,164,106,0.2);
+      background: #1C120A;
+      border: 1px solid rgba(217,160,91,0.25);
       border-radius: 6px;
       overflow-x: auto;
     }
     table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
     th {
-      background: #1A1A20;
-      color: #C9A46A;
+      background: #2B1B0E;
+      color: #D9A05B;
       padding: 14px 16px;
       font-weight: 600;
       font-size: 11px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      border-bottom: 1px solid rgba(201,164,106,0.2);
+      border-bottom: 1px solid rgba(217,160,91,0.25);
     }
     td {
       padding: 16px;
       border-bottom: 1px solid rgba(255,255,255,0.06);
       vertical-align: top;
     }
-    tr:hover td { background: rgba(201,164,106,0.03); }
+    tr:hover td { background: rgba(91,58,28,0.15); }
     .tag {
       display: inline-block;
       padding: 3px 8px;
-      background: rgba(201,164,106,0.15);
-      color: #C9A46A;
-      border: 1px solid rgba(201,164,106,0.3);
+      background: rgba(91,58,28,0.4);
+      color: #EBBF7E;
+      border: 1px solid rgba(217,160,91,0.35);
       border-radius: 3px;
       font-size: 11px;
       font-weight: 500;
     }
     a.contact-link {
-      color: #F2EFE6;
+      color: #F7F3EB;
       text-decoration: none;
       display: block;
       transition: color 0.2s;
     }
-    a.contact-link:hover { color: #C9A46A; }
-    .meta { font-size: 11px; color: #B7B0A1; margin-top: 4px; }
-    .empty { padding: 48px; text-align: center; color: #B7B0A1; font-size: 14px; }
+    a.contact-link:hover { color: #EBBF7E; }
+    .meta { font-size: 11px; color: #D6C9BA; margin-top: 4px; }
+    .empty { padding: 48px; text-align: center; color: #D6C9BA; font-size: 14px; }
   </style>
 </head>
 <body>
@@ -354,7 +354,7 @@ export async function GET(req: NextRequest) {
       </div>
       <div class="actions">
         <a href="?key=${ADMIN_KEY}&format=csv" class="btn">Download CSV</a>
-        <a href="?key=${ADMIN_KEY}&format=json" target="_blank" class="btn" style="background:#1A1A20;color:#F2EFE6;border:1px solid rgba(201,164,106,0.3);">View JSON</a>
+        <a href="?key=${ADMIN_KEY}&format=json" target="_blank" class="btn" style="background:#2B1B0E;color:#F7F3EB;border:1px solid rgba(217,160,91,0.35);">View JSON</a>
       </div>
     </header>
 
@@ -389,13 +389,13 @@ export async function GET(req: NextRequest) {
             .map(
               (i) => `<tr>
             <td>
-              <strong style="color:#C9A46A;">${i.inquiryId || 'NIVA'}</strong>
+              <strong style="color:#D9A05B;">${i.inquiryId || 'NIVA'}</strong>
               <div class="meta">${i.dateIndia || i.timestamp || ''}</div>
             </td>
             <td><strong>${i.fullName}</strong></td>
             <td>
               <a href="tel:${(i.phone || '').replace(/\s+/g, '')}" class="contact-link">📞 ${i.phone}</a>
-              <a href="mailto:${i.email}" class="contact-link" style="color:#B7B0A1;font-size:12px;">✉️ ${i.email}</a>
+              <a href="mailto:${i.email}" class="contact-link" style="color:#D6C9BA;font-size:12px;">✉️ ${i.email}</a>
             </td>
             <td>
               <span class="tag">${i.preferredModel || 'NIVA D1'}</span>

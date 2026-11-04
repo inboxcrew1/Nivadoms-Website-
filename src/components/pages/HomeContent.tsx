@@ -55,7 +55,7 @@ export const HomeContent: React.FC = () => {
             quality={75}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/65 to-charcoal/40" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(13,13,15,0.75)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,10,6,0.75)_100%)]" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center mt-12 sm:mt-20 md:mt-24 my-auto">
@@ -272,7 +272,7 @@ export const HomeContent: React.FC = () => {
                     onClick={() => setActiveFeature(idx)}
                     className={`p-4 sm:p-5 border transition-all duration-300 cursor-pointer ${
                       isActive
-                        ? 'border-champagne bg-charcoal-300/90 shadow-[0_10px_30px_rgba(201,164,106,0.15)]'
+                        ? 'border-champagne bg-charcoal-300/90 shadow-[0_10px_30px_rgba(91,58,28,0.35)]'
                         : 'border-white/10 bg-charcoal-400/40 hover:border-champagne/40'
                     }`}
                   >

@@ -5,11 +5,12 @@ export const BRAND = {
   shortTagline: "Elevated Living",
   foundedYear: 2026,
   colors: {
-    charcoal: "#0D0D0F",
-    champagne: "#C9A46A",
-    warmGold: "#E1B977",
-    ivory: "#F2EFE6",
-    warmStone: "#B7B0A1",
+    charcoal: "#0F0A06",     // Obsidian Black with dark espresso undertone
+    amberBrown: "#5B3A1C",   // Dark Amber Brown HEX #5B3A1C (RGB 91, 58, 28)
+    champagne: "#D9A05B",    // Warm Amber Champagne Accent
+    warmGold: "#EBBF7E",     // Luminous Amber Gold
+    ivory: "#F7F3EB",        // High-contrast Ivory
+    warmStone: "#D6C9BA",    // High-contrast Warm Stone
   },
   contact: {
     email: "info@nivadoms.com",

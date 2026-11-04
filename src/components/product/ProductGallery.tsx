@@ -145,7 +145,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
                 onClick={() => setActiveIdx(idx)}
                 className={`relative aspect-[4/3] border overflow-hidden transition-all duration-300 rounded-sm ${
                   isActive
-                    ? 'border-champagne ring-2 ring-champagne/60 scale-[0.98] opacity-100 shadow-[0_0_15px_rgba(201,164,106,0.3)]'
+                    ? 'border-champagne ring-2 ring-champagne/60 scale-[0.98] opacity-100 shadow-[0_0_15px_rgba(217,160,91,0.4)]'
                     : 'border-white/15 opacity-60 hover:opacity-100 hover:border-champagne/40'
                 }`}
                 aria-label={`Select photo ${idx + 1}`}

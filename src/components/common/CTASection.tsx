@@ -19,7 +19,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
 }) => {
   return (
     <section className={"relative py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-10 overflow-hidden " + (bgVariant === 'charcoal-400' ? 'bg-charcoal-400' : 'bg-charcoal')}>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(201,164,106,0.08)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(91,58,28,0.25)_0%,rgba(15,10,6,0.9)_70%)] pointer-events-none" />
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-champagne/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-champagne/30 to-transparent" />
       
