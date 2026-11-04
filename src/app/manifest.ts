@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Manufacturer of luxury dome cabins, glamping pods, and modular resort accommodation in India.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#26180F',
+    background_color: '#0F0A06',
     theme_color: '#5B3A1C',
     icons: [
       {

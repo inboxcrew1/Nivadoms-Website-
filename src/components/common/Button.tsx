@@ -33,7 +33,7 @@ export const Button: React.FC<ButtonProps> = ({
     lg: 'text-xs sm:text-sm px-6 sm:px-8 py-3.5 sm:py-4 min-h-[48px]',
   };
   const variantStyles = {
-    primary: 'bg-champagne text-charcoal-900 font-semibold hover:bg-gold-warm hover:shadow-[0_0_25px_rgba(229,177,111,0.45)] active:scale-[0.98]',
+    primary: 'bg-champagne text-charcoal font-semibold hover:bg-gold-warm hover:shadow-[0_0_25px_rgba(217,160,91,0.4)] active:scale-[0.98]',
     secondary: 'bg-charcoal-300 text-ivory border border-champagne/30 hover:border-champagne hover:bg-charcoal-200 hover:text-champagne active:scale-[0.98]',
     outline: 'bg-transparent text-ivory border border-champagne/40 hover:border-champagne hover:text-champagne hover:bg-champagne/5 active:scale-[0.98]',
     ghost: 'bg-transparent text-ivory/80 hover:text-champagne hover:bg-white/5',

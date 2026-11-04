@@ -239,8 +239,8 @@ export async function GET(req: NextRequest) {
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #26180F;
-      color: #FAF7F2;
+      background-color: #0F0A06;
+      color: #F7F3EB;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       padding: 24px 16px;
       line-height: 1.5;
@@ -252,7 +252,7 @@ export async function GET(req: NextRequest) {
       justify-content: space-between;
       align-items: center;
       padding-bottom: 24px;
-      border-bottom: 1px solid rgba(229,177,111,0.3);
+      border-bottom: 1px solid rgba(217,160,91,0.25);
       margin-bottom: 28px;
       gap: 16px;
     }
@@ -260,12 +260,12 @@ export async function GET(req: NextRequest) {
       font-size: 24px;
       font-weight: 500;
       letter-spacing: 0.15em;
-      color: #FAF7F2;
+      color: #F7F3EB;
     }
     .brand span {
       font-size: 11px;
       letter-spacing: 0.25em;
-      color: #E5B16F;
+      color: #D9A05B;
       text-transform: uppercase;
     }
     .actions { display: flex; gap: 12px; }
@@ -274,8 +274,8 @@ export async function GET(req: NextRequest) {
       align-items: center;
       gap: 6px;
       padding: 10px 18px;
-      background: #E5B16F;
-      color: #26180F;
+      background: #D9A05B;
+      color: #0F0A06;
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
@@ -285,7 +285,7 @@ export async function GET(req: NextRequest) {
       cursor: pointer;
       transition: background 0.2s;
     }
-    .btn:hover { background: #F2C889; }
+    .btn:hover { background: #EBBF7E; }
     .stats {
       display: flex;
       gap: 16px;
@@ -293,30 +293,30 @@ export async function GET(req: NextRequest) {
       flex-wrap: wrap;
     }
     .stat-card {
-      background: #362212;
-      border: 1px solid rgba(229,177,111,0.3);
+      background: #1C120A;
+      border: 1px solid rgba(217,160,91,0.25);
       border-radius: 6px;
       padding: 16px 24px;
       min-width: 180px;
     }
-    .stat-num { font-size: 28px; font-weight: 600; color: #E5B16F; }
-    .stat-label { font-size: 11px; color: #E8DDD2; text-transform: uppercase; letter-spacing: 0.1em; }
+    .stat-num { font-size: 28px; font-weight: 600; color: #D9A05B; }
+    .stat-label { font-size: 11px; color: #D6C9BA; text-transform: uppercase; letter-spacing: 0.1em; }
     .table-wrap {
-      background: #362212;
-      border: 1px solid rgba(229,177,111,0.3);
+      background: #1C120A;
+      border: 1px solid rgba(217,160,91,0.25);
       border-radius: 6px;
       overflow-x: auto;
     }
     table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
     th {
-      background: #412A15;
-      color: #E5B16F;
+      background: #2B1B0E;
+      color: #D9A05B;
       padding: 14px 16px;
       font-weight: 600;
       font-size: 11px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      border-bottom: 1px solid rgba(229,177,111,0.3);
+      border-bottom: 1px solid rgba(217,160,91,0.25);
     }
     td {
       padding: 16px;
@@ -354,7 +354,7 @@ export async function GET(req: NextRequest) {
       </div>
       <div class="actions">
         <a href="?key=${ADMIN_KEY}&format=csv" class="btn">Download CSV</a>
-        <a href="?key=${ADMIN_KEY}&format=json" target="_blank" class="btn" style="background:#412A15;color:#FAF7F2;border:1px solid rgba(229,177,111,0.4);">View JSON</a>
+        <a href="?key=${ADMIN_KEY}&format=json" target="_blank" class="btn" style="background:#2B1B0E;color:#F7F3EB;border:1px solid rgba(217,160,91,0.35);">View JSON</a>
       </div>
     </header>
 
@@ -389,13 +389,13 @@ export async function GET(req: NextRequest) {
             .map(
               (i) => `<tr>
             <td>
-              <strong style="color:#E5B16F;">${i.inquiryId || 'NIVA'}</strong>
+              <strong style="color:#D9A05B;">${i.inquiryId || 'NIVA'}</strong>
               <div class="meta">${i.dateIndia || i.timestamp || ''}</div>
             </td>
             <td><strong>${i.fullName}</strong></td>
             <td>
               <a href="tel:${(i.phone || '').replace(/\s+/g, '')}" class="contact-link">📞 ${i.phone}</a>
-              <a href="mailto:${i.email}" class="contact-link" style="color:#E8DDD2;font-size:12px;">✉️ ${i.email}</a>
+              <a href="mailto:${i.email}" class="contact-link" style="color:#D6C9BA;font-size:12px;">✉️ ${i.email}</a>
             </td>
             <td>
               <span class="tag">${i.preferredModel || 'NIVA D1'}</span>

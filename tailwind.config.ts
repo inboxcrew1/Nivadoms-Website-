@@ -12,68 +12,68 @@ const config: Config = {
         'xs': '375px',
       },
       colors: {
-        // Lighter Double-Shade Amber scale (Noticeably lighter, richer warm amber-brown tones)
+        // Double-shade Black & Dark Amber Brown scale
         charcoal: {
-          DEFAULT: "#26180F", // Visibly warm, lighter dark-amber base (replaces pitch-black)
-          50: "#5B3A1C",     // Rich Dark Amber Brown anchor #5B3A1C
-          100: "#4D3118",
-          200: "#412A15",
-          300: "#362212",    // Double-shade container / card
-          400: "#2E1D10",    // Elevated section backdrop
-          500: "#26180F",    // Main page backdrop
-          600: "#1F130B",    // Subtle deep shade
-          700: "#1A1009",
-          800: "#140C07",
-          900: "#0D0704",
+          DEFAULT: "#0F0A06", // Deep black with rich dark amber undertone
+          50: "#3D2716",
+          100: "#301F12",
+          200: "#24180E",
+          300: "#1C120A",     // Card / container double shade
+          400: "#140D07",     // Elevated section backdrop
+          500: "#0F0A06",     // Primary dark backdrop
+          600: "#0C0805",     // Deep shade
+          700: "#090603",
+          800: "#060402",
+          900: "#000000",
         },
-        // Anchor Dark Amber Brown #5B3A1C (RGB 91, 58, 28) and luminous lighter shades
+        // Exact user specified Dark Amber Brown #5B3A1C (RGB 91, 58, 28)
         amber: {
           DEFAULT: "#5B3A1C",
-          50: "#FDF8F3",
-          100: "#F5E6D4",
-          200: "#E6C6A4",
-          300: "#CE9B67",
-          400: "#8F5A2C",
-          500: "#5B3A1C",    // Exact HEX #5B3A1C
-          600: "#4D3118",
-          700: "#402813",
-          800: "#321F0F",
-          900: "#24160B",
-          dark: "#402813",
+          50: "#F6EDE5",
+          100: "#EBDAC9",
+          200: "#D7B596",
+          300: "#BE8D62",
+          400: "#8C582B",
+          500: "#5B3A1C",     // Target HEX #5B3A1C
+          600: "#4B3017",
+          700: "#3B2512",
+          800: "#2B1B0D",
+          900: "#1A1008",
+          dark: "#3D2410",
           rich: "#5B3A1C",
-          glow: "#C68B4E",
+          glow: "#A06733",
         },
-        // Radiant champagne-amber accent (brighter & luminous against the lighter warm background)
+        // Warm amber-champagne accent with luminous high contrast against dark amber brown
         champagne: {
-          DEFAULT: "#E5B16F",
-          light: "#F2C889",
-          dark: "#BF873D",
-          50: "#FDFBF7",
-          100: "#FAF3E6",
-          200: "#F3E3C8",
-          300: "#ECCE9F",
-          400: "#E9BE83",
-          500: "#E5B16F",
-          600: "#D4984A",
-          700: "#B0762E",
-          800: "#86541A",
-          900: "#54330C",
+          DEFAULT: "#D9A05B",
+          light: "#EBBF7E",
+          dark: "#A87235",
+          50: "#FCF8F2",
+          100: "#F7EEDF",
+          200: "#EEDBBF",
+          300: "#E4C59B",
+          400: "#DEB37B",
+          500: "#D9A05B",
+          600: "#C48A44",
+          700: "#9E6A2C",
+          800: "#754C1B",
+          900: "#4D300F",
         },
         gold: {
-          warm: "#F2C889",
-          DEFAULT: "#E5B16F",
-          muted: "#C8954F",
+          warm: "#EBBF7E",
+          DEFAULT: "#D9A05B",
+          muted: "#B88344",
         },
-        // Ultra-clean, crisp high-contrast text shades
+        // Crisp, high-contrast text shades
         ivory: {
-          DEFAULT: "#FAF7F2",
+          DEFAULT: "#F7F3EB",
           light: "#FFFFFF",
-          dark: "#EFE8DC",
+          dark: "#EAE3D5",
         },
         stone: {
-          warm: "#E8DDD2", // Brighter, clearer warm stone for effortless reading
-          light: "#F2EBE2",
-          dark: "#C9BAA9",
+          warm: "#D6C9BA", // High-contrast warm readable stone for body copy
+          light: "#E5DDD1",
+          dark: "#B8A793",
         },
       },
       fontFamily: {
@@ -86,10 +86,10 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gold-shimmer": "linear-gradient(90deg, #5B3A1C 0%, #F2C889 50%, #5B3A1C 100%)",
-        "double-shade": "linear-gradient(135deg, #1A1009 0%, #362212 50%, #5B3A1C 85%, #26180F 100%)",
-        "charcoal-fade": "linear-gradient(180deg, rgba(38,24,15,0) 0%, rgba(54,34,18,0.9) 60%, rgba(38,24,15,1) 100%)",
-        "amber-double": "linear-gradient(180deg, #26180F 0%, #3D2615 50%, #26180F 100%)",
+        "gold-shimmer": "linear-gradient(90deg, #5B3A1C 0%, #EBBF7E 50%, #5B3A1C 100%)",
+        "double-shade": "linear-gradient(135deg, #0A0604 0%, #26160C 50%, #5B3A1C 80%, #0A0604 100%)",
+        "charcoal-fade": "linear-gradient(180deg, rgba(15,10,6,0) 0%, rgba(36,24,14,0.85) 60%, rgba(15,10,6,1) 100%)",
+        "amber-double": "linear-gradient(180deg, #0F0A06 0%, #24180E 50%, #0F0A06 100%)",
       },
       animation: {
         "fade-in": "fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
