@@ -10,7 +10,7 @@ export const WhatsAppButton: React.FC = () => {
         href={BRAND.contact.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp with NIVA at +91 95361 71380"
+        aria-label="Chat on WhatsApp with NIVA at +91 85340 40174"
         className="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-3.5 py-3 rounded-full shadow-[0_10px_25px_-5px_rgba(0,0,0,0.6)] border border-white/20 transition-all duration-300 transform hover:scale-105"
       >
         <svg

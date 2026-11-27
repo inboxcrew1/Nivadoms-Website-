@@ -39,7 +39,7 @@ export const SITE_CONFIG = {
   ],
   contact: {
     email: "info@nivadoms.com",
-    phone: "+91 95361 71380",
+    phone: "+91 85340 40174",
     country: "India",
   },
 };
@@ -107,7 +107,7 @@ export function getOrganizationSchema() {
     "logo": "https://nivadoms.com/brand/niva-logo-main.png",
     "description": "Manufacturer and supplier of luxury dome cabins, geodesic glamping pods, and prefabricated resort accommodation in India.",
     "email": "info@nivadoms.com",
-    "telephone": "+91 95361 71380",
+    "telephone": "+91 85340 40174",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "0 Khuria Road, Azad Public School Ke Pas, Durga Enclave",
